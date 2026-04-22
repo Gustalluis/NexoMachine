@@ -1,8 +1,5 @@
-// ==========================================================================
-// EVENTO DE CARREGAMENTO DA PÁGINA (SAUDAÇÃO NA HOMEPAGE)
-// ==========================================================================
 window.onload = function() {
-  // Verifica se o usuário está na página inicial (index.html ou na raiz)
+  // Verifica se o usuário está na página inicial
   var paginaAtual = window.location.pathname;
   if (paginaAtual.endsWith("index.html") || paginaAtual.endsWith("/")) {
     
@@ -19,7 +16,7 @@ window.onload = function() {
     var diasDaSemana = ["Domingo", "Segunda-feira", "Terça-feira", "Quarta-feira", "Quinta-feira", "Sexta-feira", "Sábado"];
     var nomeDia = diasDaSemana[diaSemanaNum];
     
-    // Lógica da Saudação baseada na hora
+    // Lógica da Saudação baseada na hora do dia
     var saudacao = "";
     if (hora >= 0 && hora < 12) {
       saudacao = "Bom Dia!";
@@ -29,7 +26,7 @@ window.onload = function() {
       saudacao = "Boa Noite!";
     }
     
-    // 3. Montando a mensagem final com quebra de linha (\n)
+    // 3. Montando a mensagem final com quebra de linhas comforme solicitado e exibindo a caixa de diálogo
     var mensagemFinal = nomeCompletoAlert + "\n" + 
                         cursoFaculdade + "\n" + 
                         saudacao + " Hoje é " + nomeDia + ".";

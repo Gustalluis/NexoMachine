@@ -4,18 +4,18 @@
   box-sizing: border-box;
 }
 
-/* Sua base para trabalhar com 'em' (1em = 10px) */
+
 html {
   font-size: 62.5%;
 }
 
 body {
-  font-size: 1.6em; /* Equivalente a 16px */
+  font-size: 1.6em; 
   font-family: "Fjalla One", sans-serif;
   font-weight: 400;
   font-style: normal;
-  background-color: #0b0f19; /* Fundo Cyber */
-  background-image: url('../img/stardust.png'); /* Caminho corrigido para sair da pasta css e entrar na img */
+  background-color: #0b0f19;
+  background-image: url('../img/stardust.png');
   color: #e2e8f0;
   line-height: 1.6;
   overflow-x: hidden;
@@ -54,7 +54,7 @@ header {
 
 .logo-nav h1::after {
   content: '_';
-  color: #00e676; /* Verde Neon */
+  color: #00e676;
   animation: blink 1s step-end infinite;
 }
 
@@ -321,7 +321,6 @@ nav ul a:hover {
   border-color: #00e676;
 }
 
-/* Nova classe para substituir o inline do HTML */
 .td-botao-enviar {
   text-align: center;
 }
@@ -335,7 +334,7 @@ nav ul a:hover {
 }
 
 /* ==========================================================================
-   RODAPÉ (FOOTER) E JS (AULA 6)
+   RODAPÉ E JS
    ========================================================================== */
 footer {
   background-color: #151b2b;
@@ -389,7 +388,7 @@ footer {
 }
 
 /* ==========================================================================
-   ESTILIZAÇÃO DOS DADOS DO JAVASCRIPT (LADO A LADO)
+   ESTILIZAÇÃO DOS DADOS DO JAVASCRIPT
    ========================================================================== */
 .footer-dados-grid {
   display: flex;
