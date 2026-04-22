@@ -29,7 +29,7 @@ A aplicação simula uma plataforma de vendas de hardware para servidores e rede
 ## <a id="demo"></a>🔗 Demonstração
 
 O projeto está hospedado e pronto para visualização:  
-👉 **[Acesse a NexoMachine Online](https://gustalluis.github.io/NexoMachine/)** *(Nota: Veja as instruções abaixo para ativar este link caso ele apresente erro 404)*
+👉 **[Acesse a NexoMachine Online](https://gustalluis.github.io/NexoMachine/)**
 
 ---
 
