@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Produtos - NexoMachine</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-nav">
+        <a href="index.html"><h1>NexoMachine</h1></a>
+        <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Catálogo de Hardware</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo-principal">
+    <div class="destaque">
+      <h2>Nossos Equipamentos</h2>
+      <p>Hardware de ponta para Sysadmins e Desenvolvedores.</p>
+    </div>
+
+    <section class="grid-produtos">
+      <div class="produto-box">
+        <div class="selo-oferta">OFERTA!</div>
+        <img src="img/servidor.jpeg" alt="Servidor" width="100%">
+        <h3>PowerEdge R260</h3>
+        <p>Alta performance para virtualização e banco de dados.</p>
+        <button class="btn-comprar">Comprar R$ 20.500</button>
+      </div>
+
+      <div class="produto-box">
+        <img src="img/switch.jpg" alt="Switch de Rede" width="100%">
+        <h3>Switch Gerenciável 24 Portas</h3>
+        <p>Controle total sobre o tráfego da sua rede local.</p>
+        <button class="btn-comprar">Comprar R$ 1.200</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <div class="site-info">
+        <section class="links-rodape">
+          <div>
+            <nav>
+              <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="produtos.html">Nossos Produtos</a></li>
+                <li><a href="contato.html">Página de Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+      
+      <div class="dados-aluno-faculdade">
+        <script src="js/script.js"></script>
+      </div>
+    </div>
+  </footer>
+  <script>
+    function clickMenu() { document.querySelector('.logo-nav nav').classList.toggle('active'); }
+  </script>
+</body>
+</html>

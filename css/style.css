@@ -1,0 +1,430 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+/* Sua base para trabalhar com 'em' (1em = 10px) */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em; /* Equivalente a 16px */
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: #0b0f19; /* Fundo Cyber */
+  background-image: url('../img/stardust.png'); /* Caminho corrigido para sair da pasta css e entrar na img */
+  color: #e2e8f0;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* ==========================================================================
+   CABEÇALHO E NAVEGAÇÃO
+   ========================================================================== */
+header {
+  background-color: rgba(11, 15, 25, 0.95);
+  border-bottom: 1px solid #1e293b;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  padding: 15px 0;
+}
+
+.header-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.logo-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-nav h1 {
+  font-size: 2.4em;
+  color: #ffffff;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+.logo-nav h1::after {
+  content: '_';
+  color: #00e676; /* Verde Neon */
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink { 50% { opacity: 0; } }
+
+nav {
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul a {
+  color: #e2e8f0;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+nav ul a:hover {
+  color: #00e676;
+}
+
+#burger {
+  display: none;
+  font-size: 3.2em;
+  cursor: pointer;
+  color: #e2e8f0;
+}
+
+/* RESPONSIVO DO CABEÇALHO (480px exigido - Aula 5) */
+@media (max-width: 480px) {
+  #burger {
+    display: block; 
+  }
+  nav {
+    display: none; 
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background-color: #151b2b;
+    padding: 20px;
+    border-bottom: 2px solid #00e676;
+  }
+  nav.active {
+    display: flex; 
+  }
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* ==========================================================================
+   CONTEÚDO PRINCIPAL (HERO / DESTAQUE / VÍDEO)
+   ========================================================================== */
+.conteudo-principal {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+.destaque {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.destaque h2 {
+  font-size: 4em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.destaque p {
+  color: #94a3b8;
+  font-size: 1.8em;
+  max-width: 600px;
+  margin: 0 auto 30px;
+}
+
+.destaque img {
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  margin-bottom: 30px;
+  max-width: 600px;
+  width: 100%;
+}
+
+.destaque h3 {
+  font-size: 2.4em;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.destaque ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  text-align: left;
+  max-width: 600px;
+  margin: 0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.destaque ul li {
+  background-color: #151b2b;
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-left: 4px solid #00e676;
+  font-size: 1.5em;
+}
+
+@media (max-width: 480px) {
+  .destaque h2 { font-size: 3.2em; }
+}
+
+.video-promocional {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.video-promocional h2 {
+  font-size: 3.2em;
+  color: #ffffff;
+  margin-bottom: 30px;
+}
+
+.video-promocional iframe {
+  border-radius: 12px;
+  border: 1px solid #1e293b;
+  aspect-ratio: 16 / 9; 
+  height: auto;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* ==========================================================================
+   PÁGINA DE PRODUTOS (AULA 4 - POSITION)
+   ========================================================================== */
+.grid-produtos {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.produto-box {
+  background-color: #151b2b;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+  position: relative; /* POSITION OBRIGATÓRIO AULA 4 */
+  transition: all 0.3s ease;
+}
+
+.produto-box:hover {
+  border-color: #00e676;
+  transform: translateY(-5px);
+}
+
+.selo-oferta {
+  position: absolute; /* POSITION OBRIGATÓRIO AULA 4 */
+  top: -15px;
+  right: -15px;
+  background-color: #ff3366;
+  color: #ffffff;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 1.4em;
+}
+
+.produto-box img {
+  border-radius: 8px;
+  margin-bottom: 15px;
+  width: 100%;
+}
+
+.produto-box h3 {
+  color: #ffffff;
+  font-size: 1.9em;
+  margin-bottom: 10px;
+}
+
+.produto-box p {
+  color: #94a3b8;
+  font-size: 1.4em;
+  margin-bottom: 20px;
+}
+
+.btn-comprar {
+  background-color: #00e676;
+  color: #0b0f19;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  transition: all 0.3s ease;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.6em;
+}
+
+.btn-comprar:hover {
+  background-color: #00c853;
+}
+
+/* ==========================================================================
+   PÁGINA DE CONTATO (AULA 2 - TABELA NO FORMULÁRIO)
+   ========================================================================== */
+.form-container {
+  background-color: #151b2b;
+  border: 1px solid #1e293b;
+  border-radius: 10px;
+  padding: 40px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.tabela-form {
+  width: 100%;
+}
+
+.tabela-form td {
+  padding: 10px;
+  vertical-align: top;
+}
+
+.tabela-form label {
+  color: #ffffff;
+  display: block;
+  margin-top: 10px;
+  font-size: 1.6em;
+}
+
+.tabela-form input,
+.tabela-form select,
+.tabela-form textarea {
+  width: 100%;
+  padding: 12px;
+  background-color: #0b0f19;
+  border: 1px solid #1e293b;
+  color: #e2e8f0;
+  border-radius: 5px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 1.6em;
+}
+
+.tabela-form input:focus,
+.tabela-form select:focus,
+.tabela-form textarea:focus {
+  outline: none;
+  border-color: #00e676;
+}
+
+/* Nova classe para substituir o inline do HTML */
+.td-botao-enviar {
+  text-align: center;
+}
+
+@media (max-width: 480px) {
+  .tabela-form td {
+    display: block;
+    width: 100%;
+    padding: 5px 0;
+  }
+}
+
+/* ==========================================================================
+   RODAPÉ (FOOTER) E JS (AULA 6)
+   ========================================================================== */
+footer {
+  background-color: #151b2b;
+  border-top: 1px solid #1e293b;
+  padding: 40px 0 20px;
+  margin-top: 60px;
+}
+
+.rodape {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.site-info {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.links-rodape h2 {
+  font-size: 1.8em;
+  color: #ffffff;
+  margin-bottom: 15px;
+}
+
+.links-rodape ul {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+}
+
+.links-rodape a {
+  color: #94a3b8;
+  font-size: 1.5em;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.links-rodape a:hover {
+  color: #00e676;
+}
+
+.dados-aluno-faculdade {
+  border-top: 1px solid #1e293b;
+  padding-top: 20px;
+  text-align: center;
+  font-size: 1.4em;
+  color: #94a3b8;
+}
+
+/* ==========================================================================
+   ESTILIZAÇÃO DOS DADOS DO JAVASCRIPT (LADO A LADO)
+   ========================================================================== */
+.footer-dados-grid {
+  display: flex;
+  justify-content: center;
+  gap: 40px; 
+  text-align: left;
+  margin-top: 20px;
+}
+
+.dados-coluna {
+  background-color: #151b2b; 
+  border: 1px solid #1e293b;
+  border-left: 5px solid #00e676; 
+  border-radius: 10px;
+  padding: 20px 10px;
+  color: #e2e8f0;
+  line-height: 1.8;
+  width: 320px; 
+}
+
+.dados-coluna strong {
+  color: #00e676;
+  font-size: 1.4em;
+  text-transform: uppercase;
+}
+
+/* Colunas uma embaixo da outra no celular */
+@media (max-width: 768px) {
+  .footer-dados-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .dados-coluna {
+    width: 100%;
+    max-width: 400px;
+  }
+}

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato - NexoMachine</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="logo-nav">
+        <a href="index.html"><h1>NexoMachine</h1></a>
+        <i id="burger" class="material-symbols-outlined" onclick="clickMenu()">menu</i>
+        <nav>
+          <ul>
+            <li><a href="index.html">Início</a></li>
+            <li><a href="produtos.html">Catálogo de Hardware</a></li>
+            <li><a href="contato.html">Fale Conosco</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main class="conteudo-principal">
+    <div class="destaque">
+      <h2>Abra um Chamado de Orçamento</h2>
+      <p>Preencha os dados abaixo e nossa equipe técnica entrará em contato.</p>
+    </div>
+
+    <section class="form-container">
+      <form action="#" method="post">
+        <table class="tabela-form">
+          <tr>
+            <td><label for="nome">Nome Completo:</label></td>
+            <td><input type="text" id="nome" name="nome" placeholder="Seu nome" required autofocus></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail Corporativo:</label></td>
+            <td><input type="email" id="email" name="email" placeholder="nome@empresa.com" required></td>
+          </tr>
+          <tr>
+            <td><label for="telefone">Telefone / WhatsApp:</label></td>
+            <td><input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999"></td>
+          </tr>
+          <tr>
+            <td><label for="assunto">Setor de Atendimento:</label></td>
+            <td>
+              <select id="assunto" name="assunto">
+                <option value="orcamento">Orçamento de Servidores</option>
+                <option value="redes">Infraestrutura de Redes</option>
+                <option value="suporte">Suporte Técnico</option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="data_retorno">Melhor data para retorno:</label></td>
+            <td><input type="date" id="data_retorno" name="data_retorno" required></td>
+          </tr>
+          <tr>
+            <td><label for="mensagem">Detalhes do Projeto:</label></td>
+            <td><textarea id="mensagem" name="mensagem" rows="5" placeholder="Descreva sua necessidade de hardware..." required></textarea></td>
+          </tr>
+          <tr>
+            <td colspan="2" class="td-botao-enviar">
+              <input type="submit" value="Enviar Solicitação" class="btn-comprar">
+            </td>
+          </tr>
+        </table>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="rodape">
+      <div class="site-info">
+        <section class="links-rodape">
+          <div>
+            <nav>
+              <ul>
+                <li><a href="index.html">Página Inicial</a></li>
+                <li><a href="produtos.html">Nossos Produtos</a></li>
+                <li><a href="contato.html">Página de Contato</a></li>
+              </ul>
+            </nav>
+          </div>
+        </section>
+      </div>
+      
+      <div class="dados-aluno-faculdade">
+        <script src="js/script.js"></script>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    function clickMenu() { document.querySelector('.logo-nav nav').classList.toggle('active'); }
+  </script>
+</body>
+</html>
