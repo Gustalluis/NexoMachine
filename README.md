@@ -1,17 +1,13 @@
-<h1 align="center"> 
-  NexoMachine 🚀
-</h1>
+<h1 align="center">NexoMachine 🚀</h1>
 
-<h4 align="center"> 
-  E-commerce Front-end especializado em Hardware de Alta Performance e Infraestrutura de TI.
-</h4>
+<h4 align="center">E-commerce Front-end especializado em Hardware de Alta Performance e Infraestrutura de TI.</h4>
 
 <p align="center">
-  <a href="#sobre-o-projeto">Sobre</a> •
-  <a href="#demonstração">Demonstração</a> •
-  <a href="#funcionalidades-e-aprendizados">Funcionalidades</a> •
-  <a href="#tecnologias-e-ferramentas">Tecnologias</a> •
-  <a href="#como-executar-este-projeto-localmente">Como Executar</a> •
+  <a href="#sobre">Sobre</a> •
+  <a href="#demo">Demonstração</a> •
+  <a href="#funcionalidades">Funcionalidades</a> •
+  <a href="#tecn">Tecnologias</a> •
+  <a href="#executar">Como Executar</a> •
   <a href="#autor">Autor</a>
 </p>
 
@@ -24,46 +20,46 @@
 
 ---
 
-## 💻 Sobre o Projeto
+## <a id="sobre"></a>💻 Sobre o Projeto
 
 O **NexoMachine** é um projeto Front-end desenvolvido como parte da formação em **Análise e Desenvolvimento de Sistemas (ADS) na Universidade Mackenzie**. 
 
-A aplicação simula uma plataforma de vendas de hardware para servidores e redes. O desafio técnico consistiu em criar uma interface moderna e "Cyber/Dark" utilizando exclusivamente **Vanilla Tech** (HTML, CSS e JS puros), sem o uso de frameworks ou bibliotecas externas de estilo, focando na solidez dos fundamentos web.
+A aplicação simula uma plataforma de vendas de hardware para servidores e redes. O desafio técnico consistiu em criar uma interface moderna e "Cyber/Dark" utilizando exclusivamente **Vanilla Tech** (HTML, CSS e JS puros), sem o uso de frameworks, focando na solidez dos fundamentos web e administração via terminal Linux.
 
-## 🔗 Demonstração
+## <a id="demo"></a>🔗 Demonstração
 
 O projeto está hospedado e pronto para visualização:  
-👉 **[Acesse a NexoMachine Online](https://gustalluis.github.io/NexoMachine/)**
+👉 **[Acesse a NexoMachine Online](https://gustalluis.github.io/NexoMachine/)** *(Nota: Veja as instruções abaixo para ativar este link caso ele apresente erro 404)*
 
 ---
 
-## ✨ Funcionalidades e Aprendizados
+## <a id="funcionalidades"></a>✨ Funcionalidades e Aprendizados
 
 Durante o desenvolvimento, foram aplicadas boas práticas de arquitetura de software e UX:
 
-- **Layout Fluido e Responsivo:** Desenvolvimento utilizando Flexbox e Media Queries, garantindo uma experiência otimizada em dispositivos móveis e desktops.
-- **Saudação Inteligente (DOM Manipulation):** Script que identifica o horário do sistema do usuário e renderiza dinamicamente "Bom dia", "Boa tarde" ou "Boa noite" acompanhado do dia da semana.
-- **Modularização de Dados no Rodapé:** Uso de JavaScript para gerir as informações do autor e redes sociais, injetando o conteúdo de forma dinâmica no footer.
-- **Formulário de Orçamento com Tabela:** Organização estruturada de inputs com validação nativa de dados.
-- **Estilização com EM:** Uso de unidades de medida relativas para garantir a escalabilidade das fontes e do layout.
+- **Layout Fluido e Responsivo:** Uso de Flexbox e Media Queries para otimização em dispositivos móveis e desktops.
+- **Saudação Inteligente (DOM Manipulation):** Lógica que identifica o horário local e renderiza saudações dinâmicas acompanhadas do dia da semana.
+- **Injeção Dinâmica de Conteúdo:** Uso de JavaScript para gerenciar informações do autor e redes sociais no rodapé de forma modular.
+- **Validação de Dados:** Formulários estruturados com tabelas e validações nativas do HTML5.
+- **Escalabilidade com EM:** Unidades de medida relativas para garantir a integridade visual em diferentes resoluções.
 
-## 🛠️ Tecnologias e Ferramentas
+## <a id="tecn"></a>🛠️ Tecnologias e Ferramentas
 
-- **HTML5:** Estrutura semântica completa.
-- **CSS3:** Variáveis, Flexbox, Position Absolute/Relative e Responsividade.
-- **JavaScript:** Manipulação de eventos (`window.onload`) e lógica condicional.
+- **HTML5:** Semântica e estrutura.
+- **CSS3:** Variáveis, Posicionamento e Responsividade.
+- **JavaScript:** Eventos de carregamento (`window.onload`) e lógica condicional.
 - **Git & GitHub:** Versionamento e Deploy.
-- **Linux:** Ambiente de desenvolvimento e administração via terminal.
+- **Linux:** Ambiente de desenvolvimento (Zorin OS) e CLI.
 
 ---
 
-## 🚀 Como testar localmente
+## <a id="executar"></a>🚀 Como testar localmente
 1. `git clone https://github.com/Gustalluis/NexoMachine.git`
-2. Abrir o ficheiro `index.html` no navegador.
+2. Abrir o arquivo `index.html` no navegador.
 
 ---
 
-## 👨‍💻 Autor
+## <a id="autor"></a>👨‍💻 Autor
 
 ### **Gustavo Santos**
 ![Foto do Gustavo](https://github.com/Gustalluis.png?size=150)
@@ -74,4 +70,4 @@ Durante o desenvolvimento, foram aplicadas boas práticas de arquitetura de soft
 [![GitHub](https://img.shields.io/badge/GitHub-100000?style=flat-square&logo=github&logoColor=white)](https://github.com/Gustalluis)
 
 ---
-<p align="center">Projeto finalizado para entrega académica 🎓</p>
+<p align="center">Projeto finalizado para entrega acadêmica 🎓</p>
